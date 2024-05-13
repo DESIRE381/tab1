@@ -76,6 +76,8 @@ namespace tab1 {
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::RadioButton^ radioButton6;
+	private: System::Windows::Forms::RadioButton^ radioButton5;
 
 
 
@@ -127,13 +129,15 @@ namespace tab1 {
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
+			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->button12 = (gcnew System::Windows::Forms::Button());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -141,8 +145,8 @@ namespace tab1 {
 			this->tabPage4->SuspendLayout();
 			this->tabPage5->SuspendLayout();
 			this->tabPage6->SuspendLayout();
-			this->tabPage7->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			this->tabPage7->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -526,6 +530,8 @@ namespace tab1 {
 			// 
 			// tabPage6
 			// 
+			this->tabPage6->Controls->Add(this->radioButton6);
+			this->tabPage6->Controls->Add(this->radioButton5);
 			this->tabPage6->Controls->Add(this->pictureBox1);
 			this->tabPage6->Controls->Add(this->button12);
 			this->tabPage6->Controls->Add(this->button8);
@@ -537,6 +543,43 @@ namespace tab1 {
 			this->tabPage6->Text = L"Вопрос 5";
 			this->tabPage6->UseVisualStyleBackColor = true;
 			this->tabPage6->Click += gcnew System::EventHandler(this, &MyForm::tabPage6_Click);
+			// 
+			// radioButton6
+			// 
+			this->radioButton6->AutoSize = true;
+			this->radioButton6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton6->Location = System::Drawing::Point(336, 118);
+			this->radioButton6->Name = L"radioButton6";
+			this->radioButton6->Size = System::Drawing::Size(143, 29);
+			this->radioButton6->TabIndex = 11;
+			this->radioButton6->TabStop = true;
+			this->radioButton6->Text = L"Не машина";
+			this->radioButton6->UseVisualStyleBackColor = true;
+			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton5->Location = System::Drawing::Point(336, 72);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(182, 29);
+			this->radioButton5->TabIndex = 10;
+			this->radioButton5->TabStop = true;
+			this->radioButton5->Text = L"Не автомобиль";
+			this->radioButton5->UseVisualStyleBackColor = true;
+			this->radioButton5->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton5_CheckedChanged);
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(11, 38);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(308, 216);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 9;
+			this->pictureBox1->TabStop = false;
 			// 
 			// button12
 			// 
@@ -560,6 +603,7 @@ namespace tab1 {
 			this->button8->TabIndex = 2;
 			this->button8->Text = L"Проверить";
 			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
 			// 
 			// label6
 			// 
@@ -607,16 +651,6 @@ namespace tab1 {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(11, 47);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(308, 216);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 9;
-			this->pictureBox1->TabStop = false;
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -639,8 +673,8 @@ namespace tab1 {
 			this->tabPage5->PerformLayout();
 			this->tabPage6->ResumeLayout(false);
 			this->tabPage6->PerformLayout();
-			this->tabPage7->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			this->tabPage7->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -730,6 +764,18 @@ private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e
 	button11->Visible = true;
 }
 private: System::Void tabPage6_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void radioButton5_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+
+}
+private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	{if (radioButton5->Checked) {
+		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+	else if (radioButton6->Checked); {
+		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+	}
 }
 };
 }
