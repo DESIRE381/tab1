@@ -96,8 +96,6 @@ namespace tab1 {
 	private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Windows::Forms::PictureBox^ pictureBox6;
 	private: System::Windows::Forms::TextBox^ textBox2;
-		   int b;
-	private: System::Windows::Forms::Label^ label9;
 
 
 
@@ -171,7 +169,6 @@ namespace tab1 {
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
@@ -832,7 +829,6 @@ namespace tab1 {
 			// 
 			// tabPage7
 			// 
-			this->tabPage7->Controls->Add(this->label9);
 			this->tabPage7->Controls->Add(this->textBox2);
 			this->tabPage7->Controls->Add(this->button13);
 			this->tabPage7->Location = System::Drawing::Point(4, 22);
@@ -873,15 +869,6 @@ namespace tab1 {
 			this->button3->Text = L"Выход";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(269, 40);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(35, 13);
-			this->label9->TabIndex = 10;
-			this->label9->Text = L"label9";
 			// 
 			// MyForm
 			// 
@@ -927,7 +914,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	if (textBox1->Text == "мышь")
 	{
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
-		b = b + 1;
+
 	}
 	else MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	button1->Visible = false;
@@ -939,7 +926,7 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (radioButton3->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
-		b = b + 1;
+
 	}
 	else {
 		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
@@ -977,7 +964,7 @@ private: System::Void checkBox3_CheckedChanged(System::Object^ sender, System::E
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (checkBox1->Checked,checkBox2->Checked,checkBox4->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
-		b = b + 1;
+
 	}
 	else {
 		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
@@ -999,7 +986,7 @@ private: System::Void checkBox4_CheckedChanged_1(System::Object^ sender, System:
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (radioButton8->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
-		b = b + 1;
+
 	}
 	else {
 		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
@@ -1014,7 +1001,7 @@ private: System::Void radioButton5_CheckedChanged(System::Object^ sender, System
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
 	{if (radioButton7->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
-		b = b + 1;
+
 	}
 	else {
 		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
@@ -1029,7 +1016,6 @@ private: System::Void radioButton3_CheckedChanged(System::Object^ sender, System
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	label1->Text = b.ToString();
 }
 };
 }
