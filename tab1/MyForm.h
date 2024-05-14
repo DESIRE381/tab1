@@ -736,6 +736,9 @@ private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ 
 private: System::Void checkBox3_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (checkBox1,checkBox2,checkBox3->Checked) {
+		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
 }
 private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 	if (checkBox1->Checked)
