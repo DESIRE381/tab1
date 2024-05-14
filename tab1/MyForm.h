@@ -46,7 +46,7 @@ namespace tab1 {
 	private: System::Windows::Forms::TabPage^ tabPage7;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Label^ label1;
+
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
@@ -80,12 +80,24 @@ namespace tab1 {
 	private: System::Windows::Forms::RadioButton^ radioButton5;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label8;
-	private: System::Windows::Forms::Label^ label9;
+
 	private: System::Windows::Forms::Label^ label10;
 	private: System::Windows::Forms::RadioButton^ radioButton7;
 	private: System::Windows::Forms::RadioButton^ radioButton4;
 	private: System::Windows::Forms::Label^ label11;
-
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::PictureBox^ pictureBox4;
+	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::RadioButton^ radioButton11;
+	private: System::Windows::Forms::RadioButton^ radioButton10;
+	private: System::Windows::Forms::RadioButton^ radioButton9;
+	private: System::Windows::Forms::RadioButton^ radioButton8;
+	private: System::Windows::Forms::PictureBox^ pictureBox6;
+	private: System::Windows::Forms::TextBox^ textBox2;
+		   int b;
+	private: System::Windows::Forms::Label^ label9;
 
 
 
@@ -107,14 +119,17 @@ namespace tab1 {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
@@ -123,6 +138,7 @@ namespace tab1 {
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
@@ -132,10 +148,19 @@ namespace tab1 {
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+			this->radioButton11 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton10 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton9 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
+			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
+			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->button11 = (gcnew System::Windows::Forms::Button());
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
+			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
@@ -143,19 +168,21 @@ namespace tab1 {
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
 			this->tabControl1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
 			this->tabPage1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			this->tabPage4->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
 			this->tabPage5->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
 			this->tabPage6->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->tabPage7->SuspendLayout();
@@ -178,6 +205,7 @@ namespace tab1 {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->pictureBox4);
 			this->tabPage2->Controls->Add(this->button4);
 			this->tabPage2->Controls->Add(this->label2);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
@@ -188,11 +216,21 @@ namespace tab1 {
 			this->tabPage2->Text = L"Заголовок";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// pictureBox4
+			// 
+			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
+			this->pictureBox4->Location = System::Drawing::Point(214, 173);
+			this->pictureBox4->Name = L"pictureBox4";
+			this->pictureBox4->Size = System::Drawing::Size(245, 220);
+			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox4->TabIndex = 5;
+			this->pictureBox4->TabStop = false;
+			// 
 			// button4
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button4->Location = System::Drawing::Point(240, 160);
+			this->button4->Location = System::Drawing::Point(294, 108);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(99, 40);
 			this->button4->TabIndex = 1;
@@ -205,15 +243,15 @@ namespace tab1 {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(260, 76);
+			this->label2->Location = System::Drawing::Point(209, 56);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(58, 25);
+			this->label2->Size = System::Drawing::Size(253, 25);
 			this->label2->TabIndex = 0;
-			this->label2->Text = L"Тест";
+			this->label2->Text = L"Тест на знание основ IT";
 			// 
 			// tabPage1
 			// 
-			this->tabPage1->Controls->Add(this->label9);
+			this->tabPage1->Controls->Add(this->pictureBox2);
 			this->tabPage1->Controls->Add(this->button2);
 			this->tabPage1->Controls->Add(this->textBox1);
 			this->tabPage1->Controls->Add(this->button1);
@@ -226,6 +264,17 @@ namespace tab1 {
 			this->tabPage1->Text = L"Вопрос 1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			this->tabPage1->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(30, 162);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(245, 220);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox2->TabIndex = 4;
+			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &MyForm::pictureBox2_Click);
 			// 
 			// button2
 			// 
@@ -243,7 +292,7 @@ namespace tab1 {
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox1->Location = System::Drawing::Point(220, 171);
+			this->textBox1->Location = System::Drawing::Point(333, 152);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(249, 31);
 			this->textBox1->TabIndex = 2;
@@ -268,17 +317,17 @@ namespace tab1 {
 			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(102, 36);
+			this->label1->Location = System::Drawing::Point(249, 66);
 			this->label1->Name = L"label1";
 			this->label1->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->label1->Size = System::Drawing::Size(401, 100);
+			this->label1->Size = System::Drawing::Size(397, 50);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Как называется компонент\r\nсистемного блока, который выполняет\r\nфункцию охлаждения"
-				L"\r\n\r\n";
+			this->label1->Text = L"Назовите устройство ввода имеющее \r\nдве кнопки и колесо прокрутки";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->pictureBox3);
 			this->tabPage3->Controls->Add(this->label7);
 			this->tabPage3->Controls->Add(this->button9);
 			this->tabPage3->Controls->Add(this->radioButton3);
@@ -293,12 +342,22 @@ namespace tab1 {
 			this->tabPage3->Text = L"Вопрос 2";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(24, 183);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(204, 191);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox3->TabIndex = 9;
+			this->pictureBox3->TabStop = false;
+			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label7->Location = System::Drawing::Point(477, 47);
+			this->label7->Location = System::Drawing::Point(479, 32);
 			this->label7->Name = L"label7";
 			this->label7->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->label7->Size = System::Drawing::Size(24, 25);
@@ -322,7 +381,7 @@ namespace tab1 {
 			this->radioButton3->AutoSize = true;
 			this->radioButton3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->radioButton3->Location = System::Drawing::Point(135, 246);
+			this->radioButton3->Location = System::Drawing::Point(253, 252);
 			this->radioButton3->Name = L"radioButton3";
 			this->radioButton3->Size = System::Drawing::Size(392, 100);
 			this->radioButton3->TabIndex = 5;
@@ -337,7 +396,7 @@ namespace tab1 {
 			this->radioButton2->AutoSize = true;
 			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->radioButton2->Location = System::Drawing::Point(135, 164);
+			this->radioButton2->Location = System::Drawing::Point(253, 170);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(383, 76);
 			this->radioButton2->TabIndex = 4;
@@ -352,7 +411,7 @@ namespace tab1 {
 			this->radioButton1->AutoSize = true;
 			this->radioButton1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->radioButton1->Location = System::Drawing::Point(135, 106);
+			this->radioButton1->Location = System::Drawing::Point(137, 91);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(388, 52);
 			this->radioButton1->TabIndex = 3;
@@ -378,7 +437,7 @@ namespace tab1 {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(135, 47);
+			this->label3->Location = System::Drawing::Point(137, 32);
 			this->label3->Name = L"label3";
 			this->label3->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->label3->Size = System::Drawing::Size(349, 25);
@@ -387,6 +446,7 @@ namespace tab1 {
 			// 
 			// tabPage4
 			// 
+			this->tabPage4->Controls->Add(this->pictureBox5);
 			this->tabPage4->Controls->Add(this->label8);
 			this->tabPage4->Controls->Add(this->checkBox4);
 			this->tabPage4->Controls->Add(this->checkBox3);
@@ -402,12 +462,22 @@ namespace tab1 {
 			this->tabPage4->Text = L"Вопрос 3";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
+			// pictureBox5
+			// 
+			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
+			this->pictureBox5->Location = System::Drawing::Point(11, 174);
+			this->pictureBox5->Name = L"pictureBox5";
+			this->pictureBox5->Size = System::Drawing::Size(245, 220);
+			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox5->TabIndex = 14;
+			this->pictureBox5->TabStop = false;
+			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label8->Location = System::Drawing::Point(504, 53);
+			this->label8->Location = System::Drawing::Point(539, 49);
 			this->label8->Name = L"label8";
 			this->label8->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->label8->Size = System::Drawing::Size(24, 25);
@@ -419,7 +489,7 @@ namespace tab1 {
 			this->checkBox4->AutoSize = true;
 			this->checkBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox4->Location = System::Drawing::Point(275, 213);
+			this->checkBox4->Location = System::Drawing::Point(294, 209);
 			this->checkBox4->Name = L"checkBox4";
 			this->checkBox4->Size = System::Drawing::Size(150, 29);
 			this->checkBox4->TabIndex = 12;
@@ -432,7 +502,7 @@ namespace tab1 {
 			this->checkBox3->AutoSize = true;
 			this->checkBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox3->Location = System::Drawing::Point(275, 178);
+			this->checkBox3->Location = System::Drawing::Point(294, 174);
 			this->checkBox3->Name = L"checkBox3";
 			this->checkBox3->Size = System::Drawing::Size(237, 29);
 			this->checkBox3->TabIndex = 11;
@@ -445,7 +515,7 @@ namespace tab1 {
 			this->checkBox2->AutoSize = true;
 			this->checkBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox2->Location = System::Drawing::Point(275, 143);
+			this->checkBox2->Location = System::Drawing::Point(294, 139);
 			this->checkBox2->Name = L"checkBox2";
 			this->checkBox2->Size = System::Drawing::Size(167, 29);
 			this->checkBox2->TabIndex = 10;
@@ -458,7 +528,7 @@ namespace tab1 {
 			this->checkBox1->AutoSize = true;
 			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->checkBox1->Location = System::Drawing::Point(275, 108);
+			this->checkBox1->Location = System::Drawing::Point(294, 104);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(140, 29);
 			this->checkBox1->TabIndex = 9;
@@ -495,7 +565,7 @@ namespace tab1 {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(137, 53);
+			this->label4->Location = System::Drawing::Point(172, 49);
 			this->label4->Name = L"label4";
 			this->label4->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->label4->Size = System::Drawing::Size(370, 25);
@@ -504,6 +574,11 @@ namespace tab1 {
 			// 
 			// tabPage5
 			// 
+			this->tabPage5->Controls->Add(this->radioButton11);
+			this->tabPage5->Controls->Add(this->radioButton10);
+			this->tabPage5->Controls->Add(this->radioButton9);
+			this->tabPage5->Controls->Add(this->radioButton8);
+			this->tabPage5->Controls->Add(this->pictureBox6);
 			this->tabPage5->Controls->Add(this->label10);
 			this->tabPage5->Controls->Add(this->button11);
 			this->tabPage5->Controls->Add(this->button7);
@@ -514,6 +589,80 @@ namespace tab1 {
 			this->tabPage5->TabIndex = 4;
 			this->tabPage5->Text = L"Вопрос 4";
 			this->tabPage5->UseVisualStyleBackColor = true;
+			// 
+			// radioButton11
+			// 
+			this->radioButton11->AutoSize = true;
+			this->radioButton11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton11->Location = System::Drawing::Point(332, 116);
+			this->radioButton11->Name = L"radioButton11";
+			this->radioButton11->Size = System::Drawing::Size(154, 29);
+			this->radioButton11->TabIndex = 19;
+			this->radioButton11->TabStop = true;
+			this->radioButton11->Text = L"86 и 64 бита";
+			this->radioButton11->UseVisualStyleBackColor = true;
+			// 
+			// radioButton10
+			// 
+			this->radioButton10->AutoSize = true;
+			this->radioButton10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton10->Location = System::Drawing::Point(332, 151);
+			this->radioButton10->Name = L"radioButton10";
+			this->radioButton10->Size = System::Drawing::Size(154, 29);
+			this->radioButton10->TabIndex = 18;
+			this->radioButton10->TabStop = true;
+			this->radioButton10->Text = L"12 и 32 бита";
+			this->radioButton10->UseVisualStyleBackColor = true;
+			// 
+			// radioButton9
+			// 
+			this->radioButton9->AutoSize = true;
+			this->radioButton9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton9->Location = System::Drawing::Point(332, 186);
+			this->radioButton9->Name = L"radioButton9";
+			this->radioButton9->Size = System::Drawing::Size(154, 29);
+			this->radioButton9->TabIndex = 17;
+			this->radioButton9->TabStop = true;
+			this->radioButton9->Text = L"15 и 32 бита";
+			this->radioButton9->UseVisualStyleBackColor = true;
+			// 
+			// radioButton8
+			// 
+			this->radioButton8->AutoSize = true;
+			this->radioButton8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton8->Location = System::Drawing::Point(332, 221);
+			this->radioButton8->Name = L"radioButton8";
+			this->radioButton8->Size = System::Drawing::Size(154, 29);
+			this->radioButton8->TabIndex = 16;
+			this->radioButton8->TabStop = true;
+			this->radioButton8->Text = L"32 и 64 бита";
+			this->radioButton8->UseVisualStyleBackColor = true;
+			// 
+			// pictureBox6
+			// 
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
+			this->pictureBox6->Location = System::Drawing::Point(36, 151);
+			this->pictureBox6->Name = L"pictureBox6";
+			this->pictureBox6->Size = System::Drawing::Size(245, 220);
+			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox6->TabIndex = 15;
+			this->pictureBox6->TabStop = false;
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label10->Location = System::Drawing::Point(610, 55);
+			this->label10->Name = L"label10";
+			this->label10->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
+			this->label10->Size = System::Drawing::Size(24, 25);
+			this->label10->TabIndex = 14;
+			this->label10->Text = L"\?";
 			// 
 			// button11
 			// 
@@ -570,6 +719,44 @@ namespace tab1 {
 			this->tabPage6->UseVisualStyleBackColor = true;
 			this->tabPage6->Click += gcnew System::EventHandler(this, &MyForm::tabPage6_Click);
 			// 
+			// radioButton7
+			// 
+			this->radioButton7->AutoSize = true;
+			this->radioButton7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton7->Location = System::Drawing::Point(336, 142);
+			this->radioButton7->Name = L"radioButton7";
+			this->radioButton7->Size = System::Drawing::Size(166, 29);
+			this->radioButton7->TabIndex = 17;
+			this->radioButton7->TabStop = true;
+			this->radioButton7->Text = L"Блок питания";
+			this->radioButton7->UseVisualStyleBackColor = true;
+			// 
+			// radioButton4
+			// 
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->radioButton4->Location = System::Drawing::Point(336, 177);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(159, 29);
+			this->radioButton4->TabIndex = 16;
+			this->radioButton4->TabStop = true;
+			this->radioButton4->Text = L"Южный мост";
+			this->radioButton4->UseVisualStyleBackColor = true;
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label11->Location = System::Drawing::Point(514, 25);
+			this->label11->Name = L"label11";
+			this->label11->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
+			this->label11->Size = System::Drawing::Size(24, 25);
+			this->label11->TabIndex = 15;
+			this->label11->Text = L"\?";
+			// 
 			// radioButton6
 			// 
 			this->radioButton6->AutoSize = true;
@@ -600,7 +787,7 @@ namespace tab1 {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(11, 85);
+			this->pictureBox1->Location = System::Drawing::Point(11, 107);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(308, 216);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -645,6 +832,8 @@ namespace tab1 {
 			// 
 			// tabPage7
 			// 
+			this->tabPage7->Controls->Add(this->label9);
+			this->tabPage7->Controls->Add(this->textBox2);
 			this->tabPage7->Controls->Add(this->button13);
 			this->tabPage7->Location = System::Drawing::Point(4, 22);
 			this->tabPage7->Name = L"tabPage7";
@@ -653,11 +842,19 @@ namespace tab1 {
 			this->tabPage7->Text = L"Оценка";
 			this->tabPage7->UseVisualStyleBackColor = true;
 			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(257, 125);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(160, 20);
+			this->textBox2->TabIndex = 9;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
+			// 
 			// button13
 			// 
 			this->button13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button13->Location = System::Drawing::Point(435, 250);
+			this->button13->Location = System::Drawing::Point(278, 321);
 			this->button13->Name = L"button13";
 			this->button13->Size = System::Drawing::Size(120, 35);
 			this->button13->TabIndex = 8;
@@ -680,64 +877,11 @@ namespace tab1 {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label9->Location = System::Drawing::Point(496, 85);
+			this->label9->Location = System::Drawing::Point(269, 40);
 			this->label9->Name = L"label9";
-			this->label9->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->label9->Size = System::Drawing::Size(24, 25);
-			this->label9->TabIndex = 9;
-			this->label9->Text = L"\?";
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label10->Location = System::Drawing::Point(610, 55);
-			this->label10->Name = L"label10";
-			this->label10->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->label10->Size = System::Drawing::Size(24, 25);
-			this->label10->TabIndex = 14;
-			this->label10->Text = L"\?";
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label11->Location = System::Drawing::Point(514, 25);
-			this->label11->Name = L"label11";
-			this->label11->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->label11->Size = System::Drawing::Size(24, 25);
-			this->label11->TabIndex = 15;
-			this->label11->Text = L"\?";
-			// 
-			// radioButton4
-			// 
-			this->radioButton4->AutoSize = true;
-			this->radioButton4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->radioButton4->Location = System::Drawing::Point(336, 177);
-			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(159, 29);
-			this->radioButton4->TabIndex = 16;
-			this->radioButton4->TabStop = true;
-			this->radioButton4->Text = L"Южный мост";
-			this->radioButton4->UseVisualStyleBackColor = true;
-			// 
-			// radioButton7
-			// 
-			this->radioButton7->AutoSize = true;
-			this->radioButton7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->radioButton7->Location = System::Drawing::Point(336, 142);
-			this->radioButton7->Name = L"radioButton7";
-			this->radioButton7->Size = System::Drawing::Size(166, 29);
-			this->radioButton7->TabIndex = 17;
-			this->radioButton7->TabStop = true;
-			this->radioButton7->Text = L"Блок питания";
-			this->radioButton7->UseVisualStyleBackColor = true;
+			this->label9->Size = System::Drawing::Size(35, 13);
+			this->label9->TabIndex = 10;
+			this->label9->Text = L"label9";
 			// 
 			// MyForm
 			// 
@@ -751,18 +895,24 @@ namespace tab1 {
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->tabPage3->ResumeLayout(false);
 			this->tabPage3->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			this->tabPage4->ResumeLayout(false);
 			this->tabPage4->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
 			this->tabPage5->ResumeLayout(false);
 			this->tabPage5->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
 			this->tabPage6->ResumeLayout(false);
 			this->tabPage6->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->tabPage7->ResumeLayout(false);
+			this->tabPage7->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -774,7 +924,7 @@ namespace tab1 {
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox1->Text == "4")
+	if (textBox1->Text == "мышь")
 	{
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
 		b = b + 1;
@@ -789,10 +939,12 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (radioButton3->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		b = b + 1;
 	}
 	else {
 		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	}
+	button5->Visible = false;
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	tabControl1->SelectedTab = tabPage3;
@@ -825,10 +977,12 @@ private: System::Void checkBox3_CheckedChanged(System::Object^ sender, System::E
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (checkBox1->Checked,checkBox2->Checked,checkBox4->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		b = b + 1;
 	}
 	else {
 		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	}
+	button6->Visible = false;
 }
 private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 	//
@@ -843,14 +997,14 @@ private: System::Void checkBox4_CheckedChanged_1(System::Object^ sender, System:
 	//
 }
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
-	/*if (textBox2->Text == "220")
-	{
+	if (radioButton8->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
 		b = b + 1;
 	}
-	else MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	else {
+		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
 	button7->Visible = false;
-	button11->Visible = true;*/
 }
 private: System::Void tabPage6_Click(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -858,17 +1012,24 @@ private: System::Void radioButton5_CheckedChanged(System::Object^ sender, System
 
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
-	{if (radioButton5->Checked) {
+	{if (radioButton7->Checked) {
 		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		b = b + 1;
 	}
-	else if (radioButton6->Checked); {
-		MessageBox::Show("Правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	else {
+		MessageBox::Show("Не правильно", "Результат", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	}
 	}
+	button8->Visible = false;
 }
 private: System::Void radioButton2_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void radioButton3_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	label1->Text = b.ToString();
 }
 };
 }
