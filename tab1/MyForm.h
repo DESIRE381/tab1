@@ -1010,11 +1010,29 @@ private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ 
 	tabControl1->SelectedTab = tabPage7;
 }
 private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+	checkBox1->Checked = false;
+	checkBox2->Checked = false;
+	checkBox3->Checked = false;
+	checkBox4->Checked = false;
+	textBox1->Text = "";
+	radioButton1->Checked = false;
+	radioButton2->Checked = false;
+	radioButton3->Checked = false;
+	radioButton4->Checked = false;
+	radioButton5->Checked = false;
+	radioButton6->Checked = false;
+	radioButton7->Checked = false;
+	radioButton8->Checked = false;
+	radioButton9->Checked = false;
+	radioButton10->Checked = false;
+	radioButton11->Checked = false;
 	button1->Visible = true;
 	button5->Visible = true;
 	button6->Visible = true;
 	button7->Visible = true;
 	button8->Visible = true;
+	b = 0;
+	label9->Text = "";
 	tabControl1->SelectedTab = tabPage2;
 }
 private: System::Void checkBox3_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
